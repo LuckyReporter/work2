@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>长笛社招新</title>
+    <style>
+        /* 简单的页面美化 */
+        body { font-family: 'Microsoft YaHei', sans-serif; line-height: 1.6; margin: 0; padding: 20px; }
+        .header { position: relative; text-align: center; margin-bottom: 20px; }
+        .music-btn { position: absolute; left: 0; top: 0; cursor: pointer; color: #fff; background-color: #333; padding: 10px 15px; border-radius: 5px; border: none; font-size: 16px; }
+        .nav-links { text-align: center; background-color: #f4f4f4; padding: 15px; border-radius: 8px; margin-bottom: 30px; }
+        .nav-links a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; font-size: 18px; }
+        .nav-links a:hover { color: #d32f2f; }
+        .section { margin-bottom: 50px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        .back-btn { display: inline-block; margin-top: 20px; padding: 8px 15px; background-color: #333; color: #fff; text-decoration: none; border-radius: 5px; }
+        .back-btn:hover { background-color: #555; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: center; }
+        table, th, td { border: 1px solid #333; padding: 10px; }
+        .media-container { text-align: center; margin: 20px 0; }
+        .form-row { margin-bottom: 15px; }
+        .form-label { display: inline-block; width: 150px; text-align: right; margin-right: 10px; vertical-align: top; }
+    </style>
+</head>
+<body>
+
+    <!-- 锚点：顶部 -->
+    <a name="top"></a>
+
+    <div class="header">
+        <!-- 1. 左上角播放背景音乐按钮 -->
+        <button class="music-btn" onclick="document.getElementById('bg-music').play()">🎵 播放背景音乐</button>
+        <!-- 替换为你下载的音乐文件名 -->
+        <audio id="bg-music" src="abc.mp3" loop></audio>
+        
+        <h1>欢迎加入长笛社</h1>
+    </div>
+
+    <!-- 2. 导航链接 -->
+    <div class="nav-links">
+        <a href="#intro">社团简介</a> |
+        <a href="#schedule">活动安排</a> |
+        <a href="#showcase">风采展示</a> |
+        <a href="#story">社员故事</a> |
+        <a href="#register">在线报名</a>
+    </div>
+
+    <!-- 社团简介 -->
+    <div class="section" id="intro">
+        <a name="intro"></a>
+        <h2>社团简介</h2>
+        <!-- 替换为你用文心一言生成的简介 -->
+        <p>长笛社成立于建校之初，是校内最具活力的音乐社团之一。无论你是零基础的初学者，还是技艺精湛的长笛高手，这里都是你展现自我的绝佳舞台。我们致力于推广长笛文化，提供系统的乐理与吹奏教学，并定期举办草坪音乐会、交响乐交流沙龙。在这里，你能结识志同道合的伙伴，在清脆的笛声中吹响青春的旋律。加入我们，一起用气息感受音乐的魅力，让每一个音符都成为大学生活中最闪耀的记忆！</p>
+        <a href="#top" class="back-btn">返回顶部</a>
+    </div>
+
+    <!-- 3. 活动安排（跨行跨列表格） -->
+    <div class="section" id="schedule">
+        <a name="schedule"></a>
+        <h2>活动安排</h2>
+        <table>
+            <!-- 第一行占据4列 -->
+            <tr>
+                <th colspan="4" style="font-size: 20px; padding: 15px;">长笛社2026年春季学期活动安排表</th>
+            </tr>
+            <!-- 第二行内容居中（已是默认居中） -->
+            <tr>
+                <th>活动时间</th>
+                <th>活动名称</th>
+                <th>活动地点</th>
+                <th>指导老师</th>
+            </tr>
+            <tr>
+                <td>3月1日</td>
+                <!-- 新成员见面会和基础教学公开课在同一间教室 -->
+                <td>新成员见面会</td>
+                <td rowspan="2">音乐楼 302 教室</td>
+                <td>张老师</td>
+            </tr>
+            <tr>
+                <td>3月8日</td>
+                <td>长笛基础教学公开课</td>
+                <td>李老师</td>
+            </tr>
+            <tr>
+                <td>4月15日</td>
+                <td>春日草坪长笛独奏会</td>
+                <td>中心广场</td>
+                <td>王老师</td>
+            </tr>
+            <tr>
+                <td>5月20日</td>
+                <td>校园音乐节选拔</td>
+                <td>大礼堂</td>
+                <td>全体骨干</td>
+            </tr>
+        </table>
+        <a href="#top" class="back-btn">返回顶部</a>
+    </div>
+
+    <!-- 风采展示 -->
+    <div class="section" id="showcase">
+        <a name="showcase"></a>
+        <h2>风采展示</h2>
+        <!-- 替换为你用文心一言生成的风采展示文本 -->
+        <p>舞台上的聚光灯下，社员们手执长笛，指尖在按键上跳跃，旋律时而清澈如水，时而悠扬婉转。不论是校园迎新晚会，还是周末的草坪路演，总能看到我们活跃的身影。聚在一起时，大家或吹奏经典古典乐，或合奏动感流行曲。一支长笛，拉近了彼此的距离；一首合奏，点燃了现场的氛围。风采展示不仅是才艺的展现，更是长笛社大家庭凝聚力的体现。期待未来，这张充满青春气息的合影里，也能有你的笑脸。</p>
+        
+        <!-- 4. 图片超链接跳转 -->
+        <div class="media-container">
+            <p>点击下方图片查看详细活动介绍：</p>
+            <a href="club_intro.html">
+                <!-- 替换为你保存的日常演奏照片文件名 -->
+                <img src="123.png" alt="社团日常演奏" width="500">
+            </a>
+        </div>
+        <a href="#top" class="back-btn">返回顶部</a>
+    </div>
+
+    <!-- 5. 导入视频 -->
+    <div class="section">
+        <h2>社团精彩瞬间</h2>
+        <div class="media-container">
+            <!-- 替换为你用剪映导出的视频文件名 -->
+            <embed src="115.mp4" width="640" height="360" loop="true" />
+        </div>
+    </div>
+
+    <!-- 6. 社员故事 -->
+    <div class="section" id="story">
+        <a name="story"></a>
+        <h2>社员故事</h2>
+        <!-- 替换为你用文心一言生成的故事 -->
+        <p>刚进大学时，我完全是个音乐小白，连最基本的指法都按不对，吹得总是漏气。但社团的学长学姐非常耐心，从持笛姿势到气息控制，一步步带我练习。现在，我已经能熟练吹奏自己喜欢的曲目，甚至加入了学校的管乐团。在长笛社，我收获的不只是演奏技巧，更有在排练室里一起熬夜对谱的深厚友谊。每当大家合奏出完美的旋律时，那种成就感无与伦比。长笛社让我相信，只要热爱，音乐就无处不在。</p>
+        <a href="#top" class="back-btn">返回顶部</a>
+    </div>
+
+    <!-- 7. 在线报名表 -->
+    <div class="section" id="register">
+        <a name="register"></a>
+        <h2>在线报名表</h2>
+        <form action="#" method="post">
+            <table style="width: 80%; margin: 0 auto; text-align: left;">
+                <tr>
+                    <td width="20%">① 姓名：</td>
+                    <td><input type="text" name="username" size="20"></td>
+                </tr>
+                <tr>
+                    <td>② 性别：</td>
+                    <td>
+                        <input type="radio" name="gender" value="男" checked> 男
+                        <input type="radio" name="gender" value="女"> 女
+                    </td>
+                </tr>
+                <tr>
+                    <td>③ 出生日期：</td>
+                    <td>
+                        <input type="text" name="year" size="4"> 年
+                        <input type="text" name="month" size="2"> 月
+                        <input type="text" name="day" size="2"> 日
+                    </td>
+                </tr>
+                <tr>
+                    <td>④ 手机与邮箱：</td>
+                    <td>
+                        手机：<input type="text" name="phone" size="15"><br><br>
+                        邮箱：<input type="text" name="email" size="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>⑤ 是否有长笛基础：</td>
+                    <td>
+                        <input type="radio" name="flute_base" value="有"> 有
+                        <input type="radio" name="flute_base" value="无" checked> 无
+                    </td>
+                </tr>
+                <tr>
+                    <td>⑥ 兴趣方向：</td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="古典"> 古典
+                        <input type="checkbox" name="hobby" value="流行"> 流行
+                        <input type="checkbox" name="hobby" value="乐团"> 乐团
+                        <input type="checkbox" name="hobby" value="重奏"> 重奏
+                    </td>
+                </tr>
+                <tr>
+                    <td>⑦ 年级：</td>
+                    <td>
+                        <select name="grade">
+                            <option value="大一">大一</option>
+                            <option value="大二">大二</option>
+                            <option value="大三">大三</option>
+                            <option value="大四">大四</option>
+                            <option value="研究生">研究生</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>⑧ 自我介绍：</td>
+                    <td>
+                        <textarea name="intro" rows="5" cols="50">请简单介绍自己、以及加入长笛社的理由……</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>⑨ 是否服从活动安排：</td>
+                    <td>
+                        <input type="radio" name="obey" value="是" checked> 是
+                        <input type="radio" name="obey" value="否"> 否
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center; padding: 20px;">
+                        <input type="submit" value="⑩ 提交报名">
+                        <input type="reset" value="重置信息">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <a href="#top" class="back-btn">返回顶部</a>
+    </div>
+
+</body>
+</html>
